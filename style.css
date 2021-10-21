@@ -1,0 +1,83 @@
+#container1 {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: auto;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container2 {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: auto;
+    font-size: 50px;
+    display: flex;
+}
+
+#container2, .player-text, .comp-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.player-box, .comp-box {
+    height: inherit;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.player-score, .comp-score {
+    background-color: white;
+    color: black;
+    display: block;
+}
+
+.up-score, .low-score {
+    height: 45px;
+    width: 100px;
+    border: 2.5px;
+    border-style: solid;
+    border-color: red;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container3 {
+    background-color: black;
+    height: 150px;
+    width: auto;
+    display: flex;
+}
+
+.player-choices, button {
+    height: 50px;
+    width: 65px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.player-choices, .comp-choice {
+    gap: 10px;
+    display: flex;
+    height: inherit;
+    width: 200px;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+

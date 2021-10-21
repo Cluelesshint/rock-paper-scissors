@@ -3,64 +3,36 @@
     <head>
         <title>Rock Paper Sicssors</title>
         <meta charset="UTF-8">
+        <script src="js-file.js" defer></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script>
-            function choosePlay(num){
-                if (num == 1) return 'rock';
-                else if (num == 2) return 'paper';
-                else return 'scissors';
-            }
+        <div id="container1">Rock Paper Scissors</div>
+        <div id="container2">
+            <div class="player-box">
+                <div class="player-text">Player</div>
+                <div class="player-score">
+                    <div class="up-score">Score</div>
+                    <div class="low-score">#</div>
+                </div>
+            </div>
+            <div class="comp-box">
+                <div class="comp-text">Computer</div>
+                <div class="comp-score">
+                    <div class="up-score">Score</div>
+                    <div class="low-score">#</div>
+                </div>
+            </div>
+        </div>
+        <div id="container3">
+            <div class="player-choices">
+                <button>Rock</button>
+                <button>Paper</button>
+                <button>Scissors</button>
+            </div>
+            <div class="comp-choice">
 
-            function computerPlay(){
-                let rand = Math.floor(Math.random() * 3) + 1;
-                return choosePlay(rand);
-            }
-
-            function getPlayerChoice(){
-                let choice;
-                while (true){
-                    choice = prompt('rock, paper, or scissors?')
-                    choice.toLowerCase();
-                    if (choice == 'rock' || choice == 'paper' || choice == 'scissors'){
-                        return choice;
-                        break;
-                    } 
-                    else alert('Invalid Input');
-                }
-            }
-
-            function playRound(playerChoice, computerChoice){
-                if (playerChoice === computerChoice) return 'It\'s a tie!';
-                switch (playerChoice){
-                    case 'rock':
-                        if (computerChoice == 'paper'){
-                            return 'You lose! Paper beats rock!';
-                        }
-                        else return 'You win! Rock beats scissors';
-                        break;
-                    case 'paper':
-                        if (computerChoice == 'rock'){
-                            return 'You win! Paper beats rock';
-                        }
-                        else return 'You lose! Scissors beat paper';
-                        break;
-                    case 'scissors':
-                        if (computerChoice == 'rock'){
-                            return 'You lose! Rock beats scissors';
-                        }
-                        else return 'You win! Scissors beats paper';
-                        break;
-                } 
-            }
-
-            function game(){
-                for (let i = 0; i < 5; i++){
-                    console.log(playRound(getPlayerChoice(), computerPlay()));
-                }
-            }
-
-            game();
-        </script>
+            </div>
+        </div>
     </body>
 </html>
