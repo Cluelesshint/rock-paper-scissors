@@ -1,0 +1,166 @@
+body {
+    background-color: black;
+}
+
+#container1 {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: auto;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    height: 80px;
+    background-color: black;
+    gap: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.start-btn, .reset-btn {
+    height: 35px;
+    width: 70px;
+    font-weight: 700;
+}
+
+#container2 {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: auto;
+    font-size: 50px;
+    display: flex;
+}
+
+#container2, .comp-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.player-box, .comp-box {
+    height: inherit;
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.player-txt {
+    font-size: 45px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turn-indicator {
+    font-size: 20px;
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.comp-txt {
+    height: 50px;
+    width: auto;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp-indicator {
+    height: 50px;
+    width: auto;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-score, .comp-score {
+    background-color: white;
+    color: black;
+    display: block;
+}
+
+.up-score, .low-score {
+    height: 45px;
+    width: 100px;
+    border: 2.5px;
+    border-style: solid;
+    border-color: red;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container3 {
+    background-color: black;
+    height: 150px;
+    width: auto;
+    display: flex;
+}
+
+.player-choices, .comp-choice {
+    gap: 30px;
+    height: inherit;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.choices {
+    font-weight: 700;
+    height: 40px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    color: white;
+    font-size: 36px;
+    height: 75px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container4 {
+    height: 100px;
+    width: auto;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
